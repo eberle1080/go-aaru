@@ -182,6 +182,45 @@ The writer analyses each raw sector:
 Use `WriteSectorTag` for subchannel, track flags and ISRC, and `WriteMediaTag` for TOC, ATIP, PFI, BCA
 and so on.
 
+### Disc file systems
+
+`img.UserDataReaderAt()` exposes the 2048-byte user data of every sector as an `io.ReaderAt`, which the
+`fs/iso9660` package reads as an ISO 9660 volume (Joliet, Rock Ridge, CD-ROM XA, multi-extent and
+interleaved files). UDF is not supported yet.
+
+```go
+r, err := img.UserDataReaderAt()
+if err != nil {
+	return err
+}
+vol, err := iso9660.Open(r, r.Size(), nil) // picks Rock Ridge, Joliet or plain ISO 9660
+if err != nil {
+	return err
+}
+err = vol.Walk(func(path string, e *iso9660.Entry, err error) error {
+	if err != nil {
+		log.Printf("%s: %v", path, err) // a damaged directory or file does not stop the walk
+		return nil
+	}
+	if e.IsDir {
+		return nil
+	}
+	f, err := vol.OpenFile(e) // io.ReadSeeker + io.ReaderAt over all the file's extents
+	if err != nil {
+		return err
+	}
+	_, err = io.Copy(io.Discard, f) // errors.Is(err, aaru.ErrSectorNotDumped) for missing sectors
+	return err
+})
+for _, w := range vol.Warnings() { // irregularities that did not prevent reading
+	log.Print(w)
+}
+```
+
+The reader never rejects a volume over a cosmetic field (NUL-filled dates, NUL-padded labels, a Rock
+Ridge entry without a name...): such problems become warnings. `vol.Namespaces()` lists the views a
+disc offers and `iso9660.Options.Namespace` picks one.
+
 ### Metadata
 
 ```go
@@ -316,7 +355,8 @@ aaruformattool <verb> --help
 | `console/ps3`, `console/ps3/ird`, `console/ps3/sfo` | PS3 disc crypto, encryption maps, IRD and PARAM.SFO parsers |
 | `console/wiiu` | Wii U disc crypto and WUD/WUX reader |
 | `console/wii`, `console/ngcw` | Wii partition crypto, GameCube/Wii junk generator (LFG) and junk maps |
-| `console/iso9660` | Minimal ISO 9660 file reader |
+| `console/iso9660` | Minimal ISO 9660 file reader (locates PS3 PARAM.SFO) |
+| `fs/iso9660` | Tolerant ISO 9660 reader: Joliet, Rock Ridge, CD-ROM XA, El Torito detection, multi-extent and interleaved files; whole-volume walks for archival import. UDF is not supported yet |
 
 ## Validation
 
@@ -336,7 +376,9 @@ outputs from other software.
   (CRC-64/ECMA-182, RFC 1321, FIPS 180, NIST SP 800-38A).
 - **Command line tool.** Every verb is tested against expected-output snapshots produced by the tool
   itself (`go test ./cmd/aaruformattool -update` rewrites them).
-- **Fuzzing.** Image opening, the codecs, the console parsers and erasure-coding maps are fuzzed.
+- **Fuzzing.** Image opening, the codecs, the console parsers, the ISO 9660 reader and erasure-coding
+  maps are fuzzed. ISO 9660 test volumes are built byte by byte by the tests; when macOS `hdiutil` is
+  available, a volume it writes is cross-checked too.
 
 Behavior notes (none affect the on-disk format):
 

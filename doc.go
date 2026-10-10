@@ -38,5 +38,6 @@
 // crc64 (CRC64-ECMA), spamsum, compression/lzma, compression/zstd,
 // compression/flac, compression/cst, cdecc (CD EDC/ECC), lisatag (Apple Lisa
 // sector tags), media (media types) and console/... (PS3, Wii U and
-// GameCube/Wii disc crypto).
+// GameCube/Wii disc crypto). The fs/iso9660 package reads the ISO 9660 file
+// system of a disc image through Image.UserDataReaderAt.
 package aaru
