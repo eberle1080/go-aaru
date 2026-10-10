@@ -1,0 +1,28 @@
+Opening first image: blk_raw.aif
+Opening second image: blk_ec.aif
+
+Image Information:
+Image 1: 600 sectors, 512 bytes per sector
+Image 2: 400 sectors, 512 bytes per sector
+Mode: Normal sector read
+Will compare first 400 sectors
+
+Starting sector-by-sector comparison...
+Progress: 0% (0/400 sectors)Sector 17: DIFFERENT
+Sector 300: DIFFERENT (missing in image 2)
+Sector 301: DIFFERENT (missing in image 2)
+Sector 302: DIFFERENT (missing in image 2)
+Sector 303: DIFFERENT (missing in image 2)
+Sector 304: DIFFERENT (missing in image 2)
+Sector 305: DIFFERENT (missing in image 2)
+Sector 306: DIFFERENT (missing in image 2)
+Sector 307: DIFFERENT (missing in image 2)
+Sector 308: DIFFERENT (missing in image 2)
+Sector 309: DIFFERENT (missing in image 2)
+Progress: 100% (400/400 sectors)
+
+Comparison completed!
+Total sectors compared: 400
+Different sectors: 11
+Identical sectors: 389
+✗ Images are different (11 sectors differ)

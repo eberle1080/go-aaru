@@ -209,3 +209,6 @@ tags
 *.test
 *.out
 *.prof
+
+# Expected-output snapshots for the aaruformattool tests are source, not artifacts.
+!cmd/aaruformattool/testdata/**/*.out

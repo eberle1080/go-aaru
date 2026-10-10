@@ -1,0 +1,23 @@
+Opening first image: statuses.aif
+Opening second image: blk_raw.aif
+
+Image Information:
+Image 1: 6 sectors, 512 bytes per sector
+Image 2: 600 sectors, 512 bytes per sector
+Mode: Normal sector read
+Will compare first 6 sectors
+
+Starting sector-by-sector comparison...
+Progress: 0% (0/6 sectors)Sector 0: DIFFERENT
+Sector 1: DIFFERENT (missing in image 1)
+Sector 2: DIFFERENT
+Sector 3: DIFFERENT
+Sector 4: DIFFERENT
+Sector 5: DIFFERENT
+Progress: 100% (6/6 sectors)
+
+Comparison completed!
+Total sectors compared: 6
+Different sectors: 6
+Identical sectors: 0
+✗ Images are different (6 sectors differ)

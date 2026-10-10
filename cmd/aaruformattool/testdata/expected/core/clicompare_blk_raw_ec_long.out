@@ -1,0 +1,17 @@
+Opening first image: blk_raw.aif
+Opening second image: blk_ec.aif
+
+Image Information:
+Image 1: 600 sectors, 512 bytes per sector
+Image 2: 400 sectors, 512 bytes per sector
+Mode: Long sector read (including tags and metadata)
+Will compare first 400 sectors
+
+Starting sector-by-sector comparison...
+Progress: 0% (0/400 sectors)Progress: 100% (400/400 sectors)
+
+Comparison completed!
+Total sectors compared: 400
+Different sectors: 0
+Identical sectors: 400
+✓ Images are identical!

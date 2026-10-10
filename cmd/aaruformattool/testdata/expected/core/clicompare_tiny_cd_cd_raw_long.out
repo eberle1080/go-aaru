@@ -1,0 +1,29 @@
+Opening first image: tiny_cd.aif
+Opening second image: cd_raw.aif
+
+Image Information:
+Image 1: 12 sectors, 2352 bytes per sector
+Image 2: 800 sectors, 2352 bytes per sector
+Mode: Long sector read (including tags and metadata)
+Will compare first 12 sectors
+
+Starting sector-by-sector comparison...
+Progress: 0% (0/12 sectors)Sector 0: DIFFERENT
+Sector 1: DIFFERENT
+Sector 2: DIFFERENT
+Sector 3: DIFFERENT
+Sector 4: DIFFERENT
+Sector 5: DIFFERENT
+Sector 6: DIFFERENT
+Sector 7: DIFFERENT
+Sector 8: DIFFERENT
+Sector 9: DIFFERENT
+Sector 10: DIFFERENT
+Sector 11: DIFFERENT
+Progress: 100% (12/12 sectors)
+
+Comparison completed!
+Total sectors compared: 12
+Different sectors: 12
+Identical sectors: 0
+✗ Images are different (12 sectors differ)

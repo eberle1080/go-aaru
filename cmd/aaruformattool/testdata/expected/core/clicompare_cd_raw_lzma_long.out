@@ -1,0 +1,16 @@
+Opening first image: cd_raw.aif
+Opening second image: cd_lzma.aif
+
+Image Information:
+Image 1: 800 sectors, 2352 bytes per sector
+Image 2: 800 sectors, 2352 bytes per sector
+Mode: Long sector read (including tags and metadata)
+
+Starting sector-by-sector comparison...
+Progress: 0% (0/800 sectors)Progress: 100% (800/800 sectors)
+
+Comparison completed!
+Total sectors compared: 800
+Different sectors: 0
+Identical sectors: 800
+✓ Images are identical!

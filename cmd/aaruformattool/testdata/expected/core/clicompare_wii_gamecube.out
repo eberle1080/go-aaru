@@ -1,0 +1,116 @@
+Opening first image: wii.aif
+Opening second image: gamecube.aif
+
+Image Information:
+Image 1: 100 sectors, 2048 bytes per sector
+Image 2: 100 sectors, 2048 bytes per sector
+Mode: Normal sector read
+
+Starting sector-by-sector comparison...
+Progress: 0% (0/100 sectors)Sector 0: DIFFERENT
+Sector 1: DIFFERENT
+Sector 2: DIFFERENT
+Sector 3: DIFFERENT
+Sector 4: DIFFERENT
+Sector 5: DIFFERENT
+Sector 6: DIFFERENT
+Sector 7: DIFFERENT
+Sector 8: DIFFERENT
+Sector 9: DIFFERENT
+Sector 10: DIFFERENT
+Sector 11: DIFFERENT
+Sector 12: DIFFERENT
+Sector 13: DIFFERENT
+Sector 14: DIFFERENT
+Sector 15: DIFFERENT
+Sector 16: DIFFERENT
+Sector 17: DIFFERENT
+Sector 18: DIFFERENT
+Sector 19: DIFFERENT
+Sector 20: DIFFERENT
+Sector 21: DIFFERENT
+Sector 22: DIFFERENT
+Sector 23: DIFFERENT
+Sector 24: DIFFERENT
+Sector 25: DIFFERENT
+Sector 26: DIFFERENT
+Sector 27: DIFFERENT
+Sector 28: DIFFERENT
+Sector 29: DIFFERENT
+Sector 30: DIFFERENT
+Sector 31: DIFFERENT
+Sector 32: DIFFERENT
+Sector 33: DIFFERENT
+Sector 34: DIFFERENT
+Sector 35: DIFFERENT
+Sector 36: DIFFERENT
+Sector 37: DIFFERENT
+Sector 38: DIFFERENT
+Sector 39: DIFFERENT
+Sector 40: DIFFERENT
+Sector 41: DIFFERENT
+Sector 42: DIFFERENT
+Sector 43: DIFFERENT
+Sector 44: DIFFERENT
+Sector 45: DIFFERENT
+Sector 46: DIFFERENT
+Sector 47: DIFFERENT
+Sector 48: DIFFERENT
+Sector 49: DIFFERENT
+Sector 50: DIFFERENT
+Sector 51: DIFFERENT
+Sector 52: DIFFERENT
+Sector 53: DIFFERENT
+Sector 54: DIFFERENT
+Sector 55: DIFFERENT
+Sector 56: DIFFERENT
+Sector 57: DIFFERENT
+Sector 58: DIFFERENT
+Sector 59: DIFFERENT
+Sector 60: DIFFERENT
+Sector 61: DIFFERENT
+Sector 62: DIFFERENT
+Sector 63: DIFFERENT
+Sector 64: DIFFERENT
+Sector 65: DIFFERENT
+Sector 66: DIFFERENT
+Sector 67: DIFFERENT
+Sector 68: DIFFERENT
+Sector 69: DIFFERENT
+Sector 70: DIFFERENT
+Sector 71: DIFFERENT
+Sector 72: DIFFERENT
+Sector 73: DIFFERENT
+Sector 74: DIFFERENT
+Sector 75: DIFFERENT
+Sector 76: DIFFERENT
+Sector 77: DIFFERENT
+Sector 78: DIFFERENT
+Sector 79: DIFFERENT
+Sector 80: DIFFERENT
+Sector 81: DIFFERENT
+Sector 82: DIFFERENT
+Sector 83: DIFFERENT
+Sector 84: DIFFERENT
+Sector 85: DIFFERENT
+Sector 86: DIFFERENT
+Sector 87: DIFFERENT
+Sector 88: DIFFERENT
+Sector 89: DIFFERENT
+Sector 90: DIFFERENT
+Sector 91: DIFFERENT
+Sector 92: DIFFERENT
+Sector 93: DIFFERENT
+Sector 94: DIFFERENT
+Sector 95: DIFFERENT
+Sector 96: DIFFERENT
+Sector 97: DIFFERENT
+Sector 98: DIFFERENT
+Sector 99: DIFFERENT
+Progress: 100% (100/100 sectors)
+
+Comparison completed!
+Total sectors compared: 100
+Different sectors: 100
+Identical sectors: 0
+✗ Images are different (100 sectors differ)
