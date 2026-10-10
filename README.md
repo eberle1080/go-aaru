@@ -37,7 +37,7 @@ metadata.
 go get github.com/eberle1080/go-aaru
 ```
 
-Requires Go 1.27 or newer.
+Requires Go 1.26 or newer.
 
 ## Quick start
 
@@ -405,7 +405,7 @@ Indicative numbers on an Apple M4 Max, single-threaded unless noted:
 
 ```sh
 go test ./...                        # full suite (about a minute)
-go test -short -race ./...           # race detector; skips the slowest cases
+go test -short -race -timeout 60m ./...  # race detector; the root package alone takes ~25 minutes
 ```
 
 The tests are self-contained: every input is generated at test time.
