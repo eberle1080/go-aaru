@@ -186,7 +186,8 @@ and so on.
 
 `img.UserDataReaderAt()` exposes the 2048-byte user data of every sector as an `io.ReaderAt`, which the
 `fs/iso9660` package reads as an ISO 9660 volume (Joliet, Rock Ridge, CD-ROM XA, multi-extent and
-interleaved files). UDF is not supported yet.
+interleaved files) and the `fs/udf` package as a UDF volume (revisions 1.02 to 2.60: DVDs, Blu-rays,
+packet-written and write-once discs). HFS and HFS+ are not supported.
 
 ```go
 r, err := img.UserDataReaderAt()
@@ -220,6 +221,34 @@ for _, w := range vol.Warnings() { // irregularities that did not prevent readin
 The reader never rejects a volume over a cosmetic field (NUL-filled dates, NUL-padded labels, a Rock
 Ridge entry without a name...): such problems become warnings. `vol.Namespaces()` lists the views a
 disc offers and `iso9660.Options.Namespace` picks one.
+
+`fs/udf` has the same shape. On a UDF bridge disc (most DVDs) try UDF first: it carries the POSIX
+attributes, named streams and long Unicode names the ISO 9660 side may lack.
+
+```go
+vol, err := udf.Open(r, r.Size(), nil) // block size, partitions (VAT, sparable, metadata) detected
+if err != nil {
+	return err
+}
+err = vol.Walk(func(path string, e *udf.Entry, err error) error {
+	if err != nil {
+		log.Printf("%s: %v", path, err)
+		return nil
+	}
+	fmt.Println(path, e.Mode(), e.Size, e.ModTime(), e.SymlinkTarget)
+	for _, s := range e.Streams { // named streams, e.g. macOS extended attributes
+		f, err := vol.OpenStream(s)
+		if err != nil {
+			return err
+		}
+		_, _ = io.Copy(io.Discard, f)
+	}
+	return nil
+})
+```
+
+Hard links show up as entries with the same `e.ICB`. For a write-once disc whose image extends past
+the last session, pass `udf.Options{LastBlock: ...}` so the virtual allocation table is found.
 
 ### Metadata
 
@@ -356,7 +385,8 @@ aaruformattool <verb> --help
 | `console/wiiu` | Wii U disc crypto and WUD/WUX reader |
 | `console/wii`, `console/ngcw` | Wii partition crypto, GameCube/Wii junk generator (LFG) and junk maps |
 | `console/iso9660` | Minimal ISO 9660 file reader (locates PS3 PARAM.SFO) |
-| `fs/iso9660` | Tolerant ISO 9660 reader: Joliet, Rock Ridge, CD-ROM XA, El Torito detection, multi-extent and interleaved files; whole-volume walks for archival import. UDF is not supported yet |
+| `fs/iso9660` | Tolerant ISO 9660 reader: Joliet, Rock Ridge, CD-ROM XA, El Torito detection, multi-extent and interleaved files; whole-volume walks for archival import |
+| `fs/udf` | Tolerant UDF 1.02-2.60 reader: physical, sparable, virtual (VAT) and metadata partitions, file entries and extended file entries, named streams, symlinks, extended attributes; whole-volume walks for archival import |
 
 ## Validation
 
@@ -376,9 +406,11 @@ outputs from other software.
   (CRC-64/ECMA-182, RFC 1321, FIPS 180, NIST SP 800-38A).
 - **Command line tool.** Every verb is tested against expected-output snapshots produced by the tool
   itself (`go test ./cmd/aaruformattool -update` rewrites them).
-- **Fuzzing.** Image opening, the codecs, the console parsers, the ISO 9660 reader and erasure-coding
-  maps are fuzzed. ISO 9660 test volumes are built byte by byte by the tests; when macOS `hdiutil` is
-  available, a volume it writes is cross-checked too.
+- **Fuzzing.** Image opening, the codecs, the console parsers, the ISO 9660 and UDF readers and
+  erasure-coding maps are fuzzed. ISO 9660 and UDF test volumes are built byte by byte by the tests;
+  when macOS `hdiutil` and `newfs_udf` are available, volumes they write are cross-checked too
+  (`GO_AARU_MOUNT_TESTS=1` also populates UDF volumes through a mount and compares every revision with
+  what the macOS driver reads).
 
 Behavior notes (none affect the on-disk format):
 

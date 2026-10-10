@@ -20,7 +20,7 @@
 //     directory relocation), TF (all seven timestamps, short and long forms),
 //     SF and ZF (recorded, not interpreted) and the old RR entry.
 //
-// Not supported: UDF (a separate package will read it), High Sierra volumes,
+// Not supported: UDF (see the fs/udf package), High Sierra volumes,
 // decompressing zisofs (ZF) files, sparse (SF) file contents, and CD-ROM XA
 // Mode 2 Form 2 file data, which does not fit 2048-byte sectors (read it from
 // raw sectors; Entry.XA tells such files apart).
