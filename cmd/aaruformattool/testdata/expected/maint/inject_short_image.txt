@@ -1,0 +1,4 @@
+== stdout
+== stderr
+ERROR: Cannot read image header from: 'IMAGE'
+       File may be too small or corrupted.

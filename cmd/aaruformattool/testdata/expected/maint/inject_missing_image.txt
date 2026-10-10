@@ -1,0 +1,4 @@
+== stdout
+== stderr
+ERROR: Cannot open image file: 'IMAGE'
+       No such file or directory

@@ -1,0 +1,76 @@
+
+================================================================================
+                        AARUFORMAT IMAGE INFORMATION
+================================================================================
+
+┌─ IMAGE FORMAT ──────────────────────────────────────────────────────────────┐
+│ Magic:               AARUFRMT                                                │
+│ Format Version:      2.0                                                     │
+│ Library Version:     1.0                                                     │
+│ Identifier:          AARUFRMT                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ CREATOR APPLICATION ───────────────────────────────────────────────────────┐
+│ Application:         go-aaru-test                                            │
+│ Version:             1.0                                                     │
+│ Created:             2024-01-17 21:20:00                                     │
+│ Last Modified:       2024-01-17 22:20:00                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MEDIA INFORMATION ─────────────────────────────────────────────────────────┐
+│ Media Type:          Generic Hard Disk                                       │
+│ Geometry:            C:10 / H:4 / S:3                                        │
+│ Image Size:          797 bytes                                               │
+│ Total Sectors:       120                                                     │
+│ Sector Size:         512 bytes                                               │
+│ Has Partitions:      No                                                      │
+│ Has Sessions:        No                                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ DDT2 USER DATA HEADER ─────────────────────────────────────────────────────┐
+│ Data Type:                UserData                                           │
+│ Compression:              LZMA                                               │
+│ Hierarchy Levels:         1 (current level: 0)                               │
+│ Total Blocks:             120                                                │
+│ Negative Sectors:         0                                                  │
+│ Overflow Sectors:         0                                                  │
+│ User Sectors:             120                                                │
+│ Block Alignment Shift:    9 (2^9 = 512 bytes)                                │
+│ Data Shift:               12 (2^12 = 4096 sectors/block)                     │
+│ Table Shift:              0 (single-level)                                   │
+│ Entries:                  120                                                │
+│ Table Size:               960 bytes (compressed: 146 bytes)                  │
+│ CRC64 (uncompressed):     0x93C71175C2C3A28D                                 │
+│ CRC64 (compressed):       0x746A01344C67D0D9                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ METADATA ──────────────────────────────────────────────────────────────────┐
+│ Media Sequence:      2 of 3                                                  │
+│ Creator:             Creator value                                           │
+│ Comments:            Comments value                                          │
+│ Media Title:         MediaTitle value                                        │
+│ Media Manufacturer:  MediaManufacturer value                                 │
+│ Media Model:         MediaModel value                                        │
+│ Media Serial:        MediaSerialNumber value                                 │
+│ Media Barcode:       MediaBarcode value                                      │
+│ Media Part Number:   MediaPartNumber value                                   │
+│ Drive Manufacturer:  DriveManufacturer value                                 │
+│ Drive Model:         DriveModel value                                        │
+│ Drive Serial:        DriveSerialNumber value                                 │
+│ Drive Firmware:      DriveFirmwareRevision value                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ DUMP HARDWARE (1 device(s)) ───────────────────────────────────────────────┐
+│ Device #1:                                                                   │
+│   Manufacturer:      Maker                                                   │
+│   Model:             Drive 1                                                 │
+│   Software:          dumper                                                  │
+│   Extent:            0 - 119                                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ READABLE SECTOR TAGS ──────────────────────────────────────────────────────┐
+│  (No readable sector tags)                                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+

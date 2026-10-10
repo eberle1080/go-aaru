@@ -1,0 +1,7 @@
+repair-cd-arena on 'IMAGE'
+
+Found 1 prefix/suffix generations.
+WARNING: final prefix DDT2 could not be decoded; skipping.
+  suffix: 2 custom slots recovered, 0 unrecoverable (marked not-dumped).
+
+Repair written. New index at 1847808.

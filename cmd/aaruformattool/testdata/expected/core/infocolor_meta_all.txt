@@ -1,0 +1,77 @@
+
+[32m[1m================================================================================
+                        AARUFORMAT IMAGE INFORMATION
+================================================================================
+
+[0m[34m[1m┌─ IMAGE FORMAT ──────────────────────────────────────────────────────────────┐
+[0m[34m│ [0m[33mMagic:              [0m [37mAARUFRMT                                               [0m[34m│
+[0m[34m│ [0m[33mFormat Version:     [0m [37m2.0                                                    [0m[34m│
+[0m[34m│ [0m[33mLibrary Version:    [0m [37m1.0                                                    [0m[34m│
+[0m[34m│ [0m[33mIdentifier:         [0m [37mAARUFRMT                                               [0m[34m│
+[0m[34m[1m└─────────────────────────────────────────────────────────────────────────────┘
+
+[0m[36m[1m┌─ CREATOR APPLICATION ───────────────────────────────────────────────────────┐
+[0m[34m│ [0m[33mApplication:        [0m [37mgo-aaru-test                                           [0m[34m│
+[0m[34m│ [0m[33mVersion:            [0m [37m1.0                                                    [0m[34m│
+[0m[34m│ [0m[33mCreated:            [0m [37m2024-01-17 21:20:00                                    [0m[34m│
+[0m[34m│ [0m[33mLast Modified:      [0m [37m2024-01-17 22:20:00                                    [0m[34m│
+[0m[36m[1m└─────────────────────────────────────────────────────────────────────────────┘
+
+[0m[36m[1m┌─ MEDIA INFORMATION ─────────────────────────────────────────────────────────┐
+[0m[34m│ [0m[33mMedia Type:         [0m [37mGeneric Hard Disk                                      [0m[34m│
+[0m[34m│ [0m[33mGeometry:           [0m [37mC:10 / H:4 / S:3                                       [0m[34m│
+[0m[34m│ [0m[33mImage Size:         [0m [37m797 bytes                                              [0m[34m│
+[0m[34m│ [0m[33mTotal Sectors:      [0m [37m120                                                    [0m[34m│
+[0m[34m│ [0m[33mSector Size:        [0m [37m512 bytes                                              [0m[34m│
+[0m[34m│ [0m[33mHas Partitions:     [0m [37mNo                                                     [0m[34m│
+[0m[34m│ [0m[33mHas Sessions:       [0m [37mNo                                                     [0m[34m│
+[0m[36m[1m└─────────────────────────────────────────────────────────────────────────────┘
+
+[0m[36m[1m┌─ DDT2 USER DATA HEADER ─────────────────────────────────────────────────────┐
+[0m[34m│ [0m[33mData Type:               [0m [37mUserData                                          [0m[34m│
+[0m[34m│ [0m[33mCompression:             [0m [37mLZMA                                              [0m[34m│
+[0m[34m│ [0m[33mHierarchy Levels:        [0m [37m1 (current level: 0)                              [0m[34m│
+[0m[34m│ [0m[33mTotal Blocks:            [0m [37m120                                               [0m[34m│
+[0m[34m│ [0m[33mNegative Sectors:        [0m [37m0                                                 [0m[34m│
+[0m[34m│ [0m[33mOverflow Sectors:        [0m [37m0                                                 [0m[34m│
+[0m[34m│ [0m[33mUser Sectors:            [0m [37m120                                               [0m[34m│
+[0m[34m│ [0m[33mBlock Alignment Shift:   [0m [37m9 (2^9 = 512 bytes)                               [0m[34m│
+[0m[34m│ [0m[33mData Shift:              [0m [37m12 (2^12 = 4096 sectors/block)                    [0m[34m│
+[0m[34m│ [0m[33mTable Shift:             [0m [37m0 (single-level)                                  [0m[34m│
+[0m[34m│ [0m[33mEntries:                 [0m [37m120                                               [0m[34m│
+[0m[34m│ [0m[33mTable Size:              [0m [37m960 bytes (compressed: 146 bytes)                 [0m[34m│
+[0m[34m│ [0m[33mCRC64 (uncompressed):    [0m [37m0x93C71175C2C3A28D                                [0m[34m│
+[0m[34m│ [0m[33mCRC64 (compressed):      [0m [37m0x746A01344C67D0D9                                [0m[34m│
+[0m[36m[1m└─────────────────────────────────────────────────────────────────────────────┘
+
+[0m[36m[1m┌─ METADATA ──────────────────────────────────────────────────────────────────┐
+[0m[34m│ [0m[33mMedia Sequence:     [0m [37m2 of 3                                                 [0m[34m│
+[0m[34m│ [0m[33mCreator:            [0m [37mCreator value                                          [0m[34m│
+[0m[34m│ [0m[33mComments:           [0m [37mComments value                                         [0m[34m│
+[0m[34m│ [0m[33mMedia Title:        [0m [37mMediaTitle value                                       [0m[34m│
+[0m[34m│ [0m[33mMedia Manufacturer: [0m [37mMediaManufacturer value                                [0m[34m│
+[0m[34m│ [0m[33mMedia Model:        [0m [37mMediaModel value                                       [0m[34m│
+[0m[34m│ [0m[33mMedia Serial:       [0m [37mMediaSerialNumber value                                [0m[34m│
+[0m[34m│ [0m[33mMedia Barcode:      [0m [37mMediaBarcode value                                     [0m[34m│
+[0m[34m│ [0m[33mMedia Part Number:  [0m [37mMediaPartNumber value                                  [0m[34m│
+[0m[34m│ [0m[33mDrive Manufacturer: [0m [37mDriveManufacturer value                                [0m[34m│
+[0m[34m│ [0m[33mDrive Model:        [0m [37mDriveModel value                                       [0m[34m│
+[0m[34m│ [0m[33mDrive Serial:       [0m [37mDriveSerialNumber value                                [0m[34m│
+[0m[34m│ [0m[33mDrive Firmware:     [0m [37mDriveFirmwareRevision value                            [0m[34m│
+[0m[36m[1m└─────────────────────────────────────────────────────────────────────────────┘
+
+[0m[36m[1m┌─ DUMP HARDWARE (1 device(s)) ───────────────────────────────────────────────┐
+[0m[34m│ [0m[33mDevice #1:          [0m [37m                                                       [0m[34m│
+[0m[34m│ [0m[33m  Manufacturer:     [0m [37mMaker                                                  [0m[34m│
+[0m[34m│ [0m[33m  Model:            [0m [37mDrive 1                                                [0m[34m│
+[0m[34m│ [0m[33m  Software:         [0m [37mdumper                                                 [0m[34m│
+[0m[34m│ [0m[33m  Extent:           [0m [37m0 - 119                                                [0m[34m│
+[0m[36m[1m└─────────────────────────────────────────────────────────────────────────────┘
+
+[0m[36m[1m┌─ READABLE SECTOR TAGS ──────────────────────────────────────────────────────┐
+[0m[34m│ [0m[33m[0m [37m(No readable sector tags)                                                  [0m[34m│
+[0m[36m[1m└─────────────────────────────────────────────────────────────────────────────┘
+
+[0m================================================================================
+
+[0m

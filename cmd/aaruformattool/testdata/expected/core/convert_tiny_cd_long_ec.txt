@@ -1,0 +1,53 @@
+
+[1m[36m════════════════════════════════════════════════════════════════════════════════
+                           AARUFORMAT IMAGE CONVERTER
+════════════════════════════════════════════════════════════════════════════════[0m
+
+[1m[36m  Conversion Settings[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mInput file:         [0m IN
+  [33mOutput file:        [0m OUT
+  [33mMode:               [0m Long sectors (with metadata)
+
+[1m[36m  Opening Source Image[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+[32m  ✓ Source image opened successfully[0m
+
+[1m[36m  Source Image Information[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mMedia type:         [0m Compact Disc
+  [33mTotal sectors:      [0m 12
+  [33mSector size:        [0m 2352 bytes
+  [33mTotal size:         [0m 27.56 KiB
+  [33mCreated by:         [0m go-aaru-test 1.0
+
+[1m[36m  Media Tags[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mCount:              [0m 1 media tag(s) present
+
+    [32m•[0m CD Table of Contents
+
+[1m[36m  Creating Destination Image[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+[32m  ✓ Destination image created successfully[0m
+  [33mErasure coding:     [0m RS(4,2) — 4 data + 2 parity blocks per stripe
+[32m  ✓ Copied 2 track(s)[0m
+
+[1m[36m  Converting Sectors[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+
+
+
+[32m  ✓ Media tags copied (1 of 1)[0m
+
+[1m[36m  Conversion Summary[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mData processed:     [0m 27.56 KiB
+  [33mTime elapsed:       [0m <t>
+  [33mAverage speed:      [0m <t>
+
+
+[32m[1m  ══════════════════════════════════════════════════════════════════════════════
+                          ✓ CONVERSION COMPLETED SUCCESSFULLY
+  ══════════════════════════════════════════════════════════════════════════════[0m
+

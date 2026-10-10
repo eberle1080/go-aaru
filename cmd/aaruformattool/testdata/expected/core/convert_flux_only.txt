@@ -1,0 +1,46 @@
+
+[1m[36m════════════════════════════════════════════════════════════════════════════════
+                           AARUFORMAT IMAGE CONVERTER
+════════════════════════════════════════════════════════════════════════════════[0m
+
+[1m[36m  Conversion Settings[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mInput file:         [0m IN
+  [33mOutput file:        [0m OUT
+  [33mMode:               [0m Standard sectors
+
+[1m[36m  Opening Source Image[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+[32m  ✓ Source image opened successfully[0m
+
+[1m[36m  Source Image Information[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mMedia type:         [0m 3.5" DS HD
+  [33mTotal sectors:      [0m 0
+  [33mSector size:        [0m 0 bytes
+  [33mTotal size:         [0m 0 B
+  [33mCreated by:         [0m go-aaru-test 1.0
+
+[1m[36m  Creating Destination Image[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+[32m  ✓ Destination image created successfully[0m
+
+[1m[36m  Converting Sectors[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+
+
+
+
+[1m[36m  Conversion Summary[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mData processed:     [0m 0 B
+  [33mTime elapsed:       [0m <t>
+  [33mAverage speed:      [0m <t>
+Copying 1 flux captures...
+Successfully copied 1 flux captures.
+
+
+[32m[1m  ══════════════════════════════════════════════════════════════════════════════
+                          ✓ CONVERSION COMPLETED SUCCESSFULLY
+  ══════════════════════════════════════════════════════════════════════════════[0m
+

@@ -1,0 +1,19 @@
+== stdout
+  Note: Header blockAlignmentShift is 0, using value 9 from DDT2 header.
+Injecting media tag into image...
+  tag-type: CD Media Catalogue Number (6) -> DataType 75
+  media-tag-file: TAG (13 bytes)
+  image-file: IMAGE
+  index entries: 11
+  blockAlignmentShift: 9
+  Removing existing DataBlock with dataType 75 at offset 757248
+  Removed existing media tag entry from index.
+  Writing data block at offset 758272
+  Written data block (36 + 13 bytes)
+  Added new index entry: blockType=DataBlock, dataType=75, offset=758272
+  Writing new index at offset 758784 with 11 entries
+  Written index header and 11 entries
+  Updated header with new index offset 758784
+
+Successfully injected media tag 'CD Media Catalogue Number' into image.
+== stderr

@@ -1,0 +1,5 @@
+== stdout
+== stderr
+ERROR: Image version 1.0 is not supported.
+       Only AaruFormat version 2 or higher images are supported.
+       Please upgrade the image using the 'convert' command first.

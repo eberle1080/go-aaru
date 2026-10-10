@@ -1,0 +1,16 @@
+== stdout
+Injecting media tag into image...
+  tag-type: DVD Copyright Management Information (8) -> DataType 9
+  media-tag-file: TAG (6 bytes)
+  image-file: IMAGE
+  index entries: 3
+  blockAlignmentShift: 9
+  Writing data block at offset 66560
+  Written data block (36 + 6 bytes)
+  Added new index entry: blockType=DataBlock, dataType=9, offset=66560
+  Writing new index at offset 67072 with 4 entries
+  Written index header and 4 entries
+  Updated header with new index offset 67072
+
+Successfully injected media tag 'DVD Copyright Management Information' into image.
+== stderr

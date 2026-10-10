@@ -1,0 +1,3 @@
+repair-cd-arena on 'IMAGE'
+
+Image has no CD sector prefix/suffix DDT2; nothing to repair.

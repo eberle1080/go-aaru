@@ -1,0 +1,2 @@
+upgrade-ddt-to-alpha21 command called with path: IMAGE
+ERROR: Failed to read header from file (read 8 bytes, expected 104)

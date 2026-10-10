@@ -1,0 +1,2 @@
+upgrade-ddt-to-alpha21 command called with path: IMAGE
+ERROR: Failed to open file 'IMAGE': No such file or directory

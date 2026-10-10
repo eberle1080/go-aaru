@@ -1,0 +1,3 @@
+repair-cd-arena on 'IMAGE'
+
+ERROR: not an AaruFormat v2 image

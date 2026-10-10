@@ -1,0 +1,2 @@
+upgrade-ddt-to-alpha21 command called with path: IMAGE
+ERROR: File is not an AaruFormat image (invalid magic identifier)

@@ -1,0 +1,4 @@
+upgrade-ddt-to-alpha21 command called with path: IMAGE
+Detected AaruFormat image version 1.0
+ERROR: This command only works with AaruFormat v2 images
+       Found version 1.0, expected version 2.x

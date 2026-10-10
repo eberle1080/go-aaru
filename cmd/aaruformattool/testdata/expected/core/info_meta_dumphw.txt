@@ -1,0 +1,63 @@
+
+================================================================================
+                        AARUFORMAT IMAGE INFORMATION
+================================================================================
+
+┌─ IMAGE FORMAT ──────────────────────────────────────────────────────────────┐
+│ Magic:               AARUFRMT                                                │
+│ Format Version:      2.0                                                     │
+│ Library Version:     1.0                                                     │
+│ Identifier:          AARUFRMT                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ CREATOR APPLICATION ───────────────────────────────────────────────────────┐
+│ Application:         go-aaru-test                                            │
+│ Version:             1.0                                                     │
+│ Created:             2024-01-17 21:20:00                                     │
+│ Last Modified:       2024-01-17 22:20:00                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MEDIA INFORMATION ─────────────────────────────────────────────────────────┐
+│ Media Type:          Generic Hard Disk                                       │
+│ Image Size:          82 bytes                                                │
+│ Total Sectors:       50                                                      │
+│ Sector Size:         512 bytes                                               │
+│ Has Partitions:      No                                                      │
+│ Has Sessions:        No                                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ DDT2 USER DATA HEADER ─────────────────────────────────────────────────────┐
+│ Data Type:                UserData                                           │
+│ Compression:              LZMA                                               │
+│ Hierarchy Levels:         1 (current level: 0)                               │
+│ Total Blocks:             50                                                 │
+│ Negative Sectors:         0                                                  │
+│ Overflow Sectors:         0                                                  │
+│ User Sectors:             50                                                 │
+│ Block Alignment Shift:    9 (2^9 = 512 bytes)                                │
+│ Data Shift:               12 (2^12 = 4096 sectors/block)                     │
+│ Table Shift:              0 (single-level)                                   │
+│ Entries:                  50                                                 │
+│ Table Size:               400 bytes (compressed: 82 bytes)                   │
+│ CRC64 (uncompressed):     0x9B039A89EE494C8E                                 │
+│ CRC64 (compressed):       0x575E3595B3757012                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ DUMP HARDWARE (2 device(s)) ───────────────────────────────────────────────┐
+│ Device #1:                                                                   │
+│   Manufacturer:      Maker                                                   │
+│   Model:             Reader                                                  │
+│   Software:          dumper                                                  │
+│   Extent:            0 - 9                                                   │
+│   Extent:            20 - 29                                                 │
+│ Device #2:                                                                   │
+│   Model:             Second                                                  │
+│   Extents:           4 extent(s)                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ READABLE SECTOR TAGS ──────────────────────────────────────────────────────┐
+│  (No readable sector tags)                                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+

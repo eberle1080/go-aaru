@@ -1,0 +1,16 @@
+== stdout
+Injecting media tag into image...
+  tag-type: SCSI INQUIRY Data (45) -> DataType 46
+  media-tag-file: TAG (96 bytes)
+  image-file: IMAGE
+  index entries: 2
+  blockAlignmentShift: 9
+  Writing data block at offset 2560
+  Written data block (36 + 96 bytes)
+  Added new index entry: blockType=DataBlock, dataType=46, offset=2560
+  Writing new index at offset 3072 with 3 entries
+  Written index header and 3 entries
+  Updated header with new index offset 3072
+
+Successfully injected media tag 'SCSI INQUIRY Data' into image.
+== stderr

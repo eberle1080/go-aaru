@@ -1,0 +1,3 @@
+upgrade-ddt-to-alpha21 command called with path: IMAGE
+Detected AaruFormat image version 2.0
+ERROR: Failed to read complete v2 header from file (read 120 bytes, expected 147)

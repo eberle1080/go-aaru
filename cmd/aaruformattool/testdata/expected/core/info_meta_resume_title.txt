@@ -1,0 +1,69 @@
+
+================================================================================
+                        AARUFORMAT IMAGE INFORMATION
+================================================================================
+
+┌─ IMAGE FORMAT ──────────────────────────────────────────────────────────────┐
+│ Magic:               AARUFRMT                                                │
+│ Format Version:      2.0                                                     │
+│ Library Version:     1.0                                                     │
+│ Identifier:          AARUFRMT                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ CREATOR APPLICATION ───────────────────────────────────────────────────────┐
+│ Application:         go-aaru-test                                            │
+│ Version:             1.0                                                     │
+│ Created:             2024-01-17 21:20:00                                     │
+│ Last Modified:       2024-01-17 22:20:00                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MEDIA INFORMATION ─────────────────────────────────────────────────────────┐
+│ Media Type:          CD-ROM (Yellow Book)                                    │
+│ Image Size:          301 bytes                                               │
+│ Total Sectors:       40                                                      │
+│ Sector Size:         2048 bytes                                              │
+│ Has Partitions:      Yes                                                     │
+│ Has Sessions:        Yes                                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ DDT2 USER DATA HEADER ─────────────────────────────────────────────────────┐
+│ Data Type:                UserData                                           │
+│ Compression:              LZMA                                               │
+│ Hierarchy Levels:         1 (current level: 0)                               │
+│ Total Blocks:             40                                                 │
+│ Negative Sectors:         0                                                  │
+│ Overflow Sectors:         0                                                  │
+│ User Sectors:             40                                                 │
+│ Block Alignment Shift:    9 (2^9 = 512 bytes)                                │
+│ Data Shift:               12 (2^12 = 4096 sectors/block)                     │
+│ Table Shift:              0 (single-level)                                   │
+│ Entries:                  40                                                 │
+│ Table Size:               320 bytes (compressed: 71 bytes)                   │
+│ CRC64 (uncompressed):     0x22521B91A2B3B92F                                 │
+│ CRC64 (compressed):       0x94496029F351DB06                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ METADATA ──────────────────────────────────────────────────────────────────┐
+│ Media Title:         Resumed title                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TRACKS (1 total) ──────────────────────────────────────────────────────────┐
+│  Track #1 : Seq=1 Type=2 Start=0 End=39 Session=1                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MEDIA TAGS (1 total) ──────────────────────────────────────────────────────┐
+│  CD Table of Contents (12 bytes)                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ READABLE SECTOR TAGS ──────────────────────────────────────────────────────┐
+│  CD Sector Sync                                                              │
+│  CD Sector Header                                                            │
+│  CD Sector Sub-Header                                                        │
+│  CD Sector EDC                                                               │
+│  CD Sector ECC P                                                             │
+│  CD Sector ECC Q                                                             │
+│  CD Sector ECC (P+Q)                                                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+

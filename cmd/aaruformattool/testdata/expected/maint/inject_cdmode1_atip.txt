@@ -1,0 +1,16 @@
+== stdout
+Injecting media tag into image...
+  tag-type: CD Absolute Time in Pregroove (4) -> DataType 6
+  media-tag-file: TAG (3000 bytes)
+  image-file: IMAGE
+  index entries: 6
+  blockAlignmentShift: 9
+  Writing data block at offset 110592
+  Written data block (36 + 3000 bytes)
+  Added new index entry: blockType=DataBlock, dataType=6, offset=110592
+  Writing new index at offset 113664 with 7 entries
+  Written index header and 7 entries
+  Updated header with new index offset 113664
+
+Successfully injected media tag 'CD Absolute Time in Pregroove' into image.
+== stderr

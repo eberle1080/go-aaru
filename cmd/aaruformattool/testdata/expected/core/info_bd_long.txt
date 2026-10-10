@@ -1,0 +1,51 @@
+
+================================================================================
+                        AARUFORMAT IMAGE INFORMATION
+================================================================================
+
+┌─ IMAGE FORMAT ──────────────────────────────────────────────────────────────┐
+│ Magic:               AARUFRMT                                                │
+│ Format Version:      2.0                                                     │
+│ Library Version:     1.0                                                     │
+│ Identifier:          AARUFRMT                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ CREATOR APPLICATION ───────────────────────────────────────────────────────┐
+│ Application:         go-aaru-test                                            │
+│ Version:             1.0                                                     │
+│ Created:             2024-01-17 21:20:00                                     │
+│ Last Modified:       2024-01-17 22:20:00                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MEDIA INFORMATION ─────────────────────────────────────────────────────────┐
+│ Media Type:          BD-ROM                                                  │
+│ Image Size:          432 bytes                                               │
+│ Total Sectors:       300                                                     │
+│ Sector Size:         2048 bytes                                              │
+│ Has Partitions:      No                                                      │
+│ Has Sessions:        No                                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ DDT2 USER DATA HEADER ─────────────────────────────────────────────────────┐
+│ Data Type:                UserData                                           │
+│ Compression:              LZMA                                               │
+│ Hierarchy Levels:         1 (current level: 0)                               │
+│ Total Blocks:             300                                                │
+│ Negative Sectors:         0                                                  │
+│ Overflow Sectors:         0                                                  │
+│ User Sectors:             300                                                │
+│ Block Alignment Shift:    9 (2^9 = 512 bytes)                                │
+│ Data Shift:               12 (2^12 = 4096 sectors/block)                     │
+│ Table Shift:              0 (single-level)                                   │
+│ Entries:                  300                                                │
+│ Table Size:               2400 bytes (compressed: 88 bytes)                  │
+│ CRC64 (uncompressed):     0xED182BF919350ABF                                 │
+│ CRC64 (compressed):       0xE53BC7B9D12F42F4                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ READABLE SECTOR TAGS ──────────────────────────────────────────────────────┐
+│  Blu-ray Sector EDC                                                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+

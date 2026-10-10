@@ -1,0 +1,3 @@
+== stdout
+== stderr
+ERROR: Expected IndexBlock3 identifier, found 0x12345678

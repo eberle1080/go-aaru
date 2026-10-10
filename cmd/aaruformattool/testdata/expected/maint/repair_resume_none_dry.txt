@@ -1,0 +1,7 @@
+repair-cd-arena on 'IMAGE' (dry run)
+
+Found 4 prefix/suffix generations.
+  prefix: 7 custom slots recovered, 0 unrecoverable (marked not-dumped).
+  suffix: 7 custom slots recovered, 0 unrecoverable (marked not-dumped).
+
+Dry run only; no changes written.

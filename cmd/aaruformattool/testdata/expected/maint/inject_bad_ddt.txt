@@ -1,0 +1,3 @@
+== stdout
+== stderr
+ERROR: Expected DeDuplicationTable2 identifier at offset 1536, found 0x41414141

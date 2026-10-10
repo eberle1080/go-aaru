@@ -1,0 +1,153 @@
+upgrade-ddt-to-alpha21 command called with path: IMAGE
+Detected AaruFormat image version 2.0
+Successfully loaded AaruFormat v2 header
+  Index offset: 19968 bytes
+  Media type: 10 (Compact Disc)
+  Block alignment shift: 9
+  Biggest sector size: 2352 bytes
+
+================================================================================
+                           *** IMPORTANT WARNING ***
+================================================================================
+
+This command is designed ONLY for images created with:
+  - Aaru alpha 16 or earlier
+
+CRITICAL LIMITATIONS:
+
+  1. There is NO WAY to automatically determine if this image actually needs
+     an upgrade. The file format version cannot distinguish between images
+     created with Aaru alpha 16 and newer versions.
+
+  2. Attempting to upgrade images created with NEWER versions (Aaru alpha 17+)
+     WILL CORRUPT THEM and make them UNREADABLE.
+
+  3. There is NO GUARANTEE of success. The upgrade process may fail or
+     produce an invalid image even with correct input.
+
+  4. This command is provided as a LAST RESORT ONLY.
+
+RECOMMENDED SOLUTION:
+
+  The IDEAL and SAFEST solution is to re-dump the media using a current
+  version of Aaru. This ensures data integrity and full compatibility with
+  the latest format improvements.
+
+Before proceeding:
+  - Make sure you have a BACKUP of the original image file
+  - Verify the image was created with Aaru alpha 16 or earlier
+  - Consider re-dumping the media if possible
+
+================================================================================
+
+Structure size comparison:
+  Alpha20 DDT v2 header: 81 bytes
+  Current library DdtHeader2: 85 bytes
+  Structure sizes differ - upgrade needed!
+
+Do you want to proceed with the upgrade? (yes/no): 
+Proceeding with upgrade...
+Reading index with 9 entries...
+Successfully loaded 9 index entries into hash table
+Found 3 DDT v2 blocks to upgrade
+Processing DDT v2 block (dataType=User Data) at offset 15872...
+  Old DDT header read successfully
+    Identifier: 0x32544444
+    Type: 1
+    Compression: 1
+    Entries: 16
+    Compressed length: 48 bytes
+    Uncompressed length: 128 bytes
+  DDT payload read successfully (48 bytes)
+  Removing DDT entry from index...
+  DDT block processed and removed from index
+
+Processing DDT v2 block (dataType=CD Sector Prefix (sync + header)) at offset 17408...
+  Old DDT header read successfully
+    Identifier: 0x32544444
+    Type: 69
+    Compression: 1
+    Entries: 16
+    Compressed length: 20 bytes
+    Uncompressed length: 128 bytes
+  DDT payload read successfully (20 bytes)
+  Removing DDT entry from index...
+  DDT block processed and removed from index
+
+Processing DDT v2 block (dataType=CD Sector Suffix (EDC + ECC)) at offset 18944...
+  Old DDT header read successfully
+    Identifier: 0x32544444
+    Type: 70
+    Compression: 1
+    Entries: 16
+    Compressed length: 22 bytes
+    Uncompressed length: 128 bytes
+  DDT payload read successfully (22 bytes)
+  Removing DDT entry from index...
+  DDT block processed and removed from index
+
+Processed 3 DDT v2 block(s)
+
+================================================================================
+                          DDT UPGRADE PROCESSING
+================================================================================
+
+
+Writing upgraded DDT blocks:
+  DDT block 1 (dataType=User Data):
+    Old offset: 15872 bytes
+    New offset: 20480 bytes
+    Header written: 85 bytes
+    Payload written: 48 bytes
+    Added to index
+
+  DDT block 2 (dataType=CD Sector Prefix (sync + header)):
+    Old offset: 17408 bytes
+    New offset: 20992 bytes
+    Header written: 85 bytes
+    Payload written: 20 bytes
+    Added to index
+
+  DDT block 3 (dataType=CD Sector Suffix (EDC + ECC)):
+    Old offset: 18944 bytes
+    New offset: 21504 bytes
+    Header written: 85 bytes
+    Payload written: 22 bytes
+    Added to index
+
+All 3 DDT block(s) upgraded successfully
+
+================================================================================
+                       WRITING UPDATED INDEX
+================================================================================
+
+Updated index contains 9 entries
+Writing new index:
+  Current file size: 21611 bytes
+  Block alignment: 512 bytes (2^9)
+  New index offset: 22016 bytes
+  Calculated index CRC64: 0x1E7065DB1E5B7852
+  New index header written (28 bytes)
+  Index entries written (9 entries, 126 bytes)
+
+================================================================================
+                       UPDATING FILE HEADER
+================================================================================
+
+Updating header index offset:
+  Old index offset: 19968 bytes
+  New index offset: 22016 bytes
+  Updated header written (147 bytes)
+
+================================================================================
+                    UPGRADE COMPLETED SUCCESSFULLY
+================================================================================
+
+Summary of changes:
+  1. 3 DDT v2 block(s) upgraded and written
+  2. Updated index written at offset 22016 (28 + 126 bytes)
+  3. File header updated with new index offset
+
+The image has been successfully upgraded to alpha21 format.
+You can now use this image with current versions of Aaru.
+

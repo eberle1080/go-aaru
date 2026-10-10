@@ -1,0 +1,3 @@
+== stdout
+== stderr
+ERROR: Cannot read index header from: 'IMAGE'

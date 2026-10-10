@@ -1,0 +1,7 @@
+repair-cd-arena on 'IMAGE'
+
+Found 4 prefix/suffix generations.
+  prefix: 7 custom slots recovered, 0 unrecoverable (marked not-dumped).
+  suffix: 7 custom slots recovered, 0 unrecoverable (marked not-dumped).
+
+Repair written. New index at 11776.

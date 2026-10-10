@@ -1,0 +1,3 @@
+== stdout
+== stderr
+ERROR: 'IMAGE' is not a valid AaruFormat image.

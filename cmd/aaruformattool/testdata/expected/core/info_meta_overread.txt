@@ -1,0 +1,55 @@
+
+================================================================================
+                        AARUFORMAT IMAGE INFORMATION
+================================================================================
+
+┌─ IMAGE FORMAT ──────────────────────────────────────────────────────────────┐
+│ Magic:               AARUFRMT                                                │
+│ Format Version:      2.0                                                     │
+│ Library Version:     1.0                                                     │
+│ Identifier:          AARUFRMT                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ CREATOR APPLICATION ───────────────────────────────────────────────────────┐
+│ Application:         go-aaru-test                                            │
+│ Version:             1.0                                                     │
+│ Created:             2024-01-17 21:20:00                                     │
+│ Last Modified:       2024-01-17 22:20:00                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ MEDIA INFORMATION ─────────────────────────────────────────────────────────┐
+│ Media Type:          Generic Hard Disk                                       │
+│ Image Size:          544 bytes                                               │
+│ Total Sectors:       4                                                       │
+│ Sector Size:         512 bytes                                               │
+│ Has Partitions:      No                                                      │
+│ Has Sessions:        No                                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ DDT2 USER DATA HEADER ─────────────────────────────────────────────────────┐
+│ Data Type:                UserData                                           │
+│ Compression:              None                                               │
+│ Hierarchy Levels:         1 (current level: 0)                               │
+│ Total Blocks:             4                                                  │
+│ Negative Sectors:         0                                                  │
+│ Overflow Sectors:         0                                                  │
+│ User Sectors:             4                                                  │
+│ Block Alignment Shift:    9 (2^9 = 512 bytes)                                │
+│ Data Shift:               12 (2^12 = 4096 sectors/block)                     │
+│ Table Shift:              0 (single-level)                                   │
+│ Entries:                  4                                                  │
+│ Table Size:               32 bytes (compressed: 32 bytes)                    │
+│ CRC64 (uncompressed):     0x766429262A62EC16                                 │
+│ CRC64 (compressed):       0x766429262A62EC16                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ METADATA ──────────────────────────────────────────────────────────────────┐
+│ Creator:             cccccccccccccccccccccccccccccccccccccccccccccccccccccccc │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ READABLE SECTOR TAGS ──────────────────────────────────────────────────────┐
+│  (No readable sector tags)                                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+

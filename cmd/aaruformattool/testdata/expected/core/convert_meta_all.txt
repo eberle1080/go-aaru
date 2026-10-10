@@ -1,0 +1,80 @@
+
+[1m[36m════════════════════════════════════════════════════════════════════════════════
+                           AARUFORMAT IMAGE CONVERTER
+════════════════════════════════════════════════════════════════════════════════[0m
+
+[1m[36m  Conversion Settings[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mInput file:         [0m IN
+  [33mOutput file:        [0m OUT
+  [33mMode:               [0m Standard sectors
+
+[1m[36m  Opening Source Image[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+[32m  ✓ Source image opened successfully[0m
+
+[1m[36m  Source Image Information[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mMedia type:         [0m Generic Hard Disk
+  [33mTotal sectors:      [0m 120
+  [33mSector size:        [0m 512 bytes
+  [33mTotal size:         [0m 60.00 KiB
+  [33mCreated by:         [0m go-aaru-test 1.0
+
+[1m[36m  Dump Hardware Information[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33m  Manufacturer:     [0m Maker
+  [33m  Model:            [0m Drive 1
+  [33m  Software:         [0m dumper 1.0
+  [33m  Extents:          [0m 1 extent(s)
+
+[1m[36m  Aaru JSON Metadata[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mSize:               [0m 33 B
+[32m  ✓ Aaru JSON metadata present[0m
+
+[1m[36m  Image Metadata[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mMedia Sequence:     [0m 2 of 3
+  [33mCreator:            [0m Creator value
+  [33mComments:           [0m Comments value
+  [33mMedia Title:        [0m MediaTitle value
+  [33mMedia Manufacturer: [0m MediaManufacturer value
+  [33mMedia Model:        [0m MediaModel value
+  [33mMedia Serial:       [0m MediaSerialNumber value
+  [33mMedia Barcode:      [0m MediaBarcode value
+  [33mMedia Part Number:  [0m MediaPartNumber value
+  [33mDrive Manufacturer: [0m DriveManufacturer value
+  [33mDrive Model:        [0m DriveModel value
+  [33mDrive Serial:       [0m DriveSerialNumber value
+  [33mDrive Firmware:     [0m DriveFirmwareRevision value
+
+[1m[36m  Geometry[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mGeometry:           [0m 10 cylinders, 4 heads, 3 sectors/track
+
+[1m[36m  Creating Destination Image[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+[32m  ✓ Destination image created successfully[0m
+
+[1m[36m  Converting Sectors[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+
+
+
+[32m  ✓ Geometry copied to destination image[0m
+[32m  ✓ Dump hardware information copied (1 set(s))[0m
+[32m  ✓ Aaru JSON metadata copied (33 B)[0m
+[32m  ✓ Basic metadata copied (13 field(s))[0m
+
+[1m[36m  Conversion Summary[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mData processed:     [0m 60.00 KiB
+  [33mTime elapsed:       [0m <t>
+  [33mAverage speed:      [0m <t>
+
+
+[32m[1m  ══════════════════════════════════════════════════════════════════════════════
+                          ✓ CONVERSION COMPLETED SUCCESSFULLY
+  ══════════════════════════════════════════════════════════════════════════════[0m
+

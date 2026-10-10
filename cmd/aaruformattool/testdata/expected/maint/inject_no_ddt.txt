@@ -1,0 +1,4 @@
+== stdout
+== stderr
+ERROR: No UserData DDT2 block found in index.
+       This image appears to be invalid or corrupted.

@@ -1,0 +1,49 @@
+upgrade-ddt-to-alpha21 command called with path: IMAGE
+Detected AaruFormat image version 2.0
+Successfully loaded AaruFormat v2 header
+  Index offset: 2048 bytes
+  Media type: 662 (Floptical)
+  Block alignment shift: 9
+  Biggest sector size: 512 bytes
+
+================================================================================
+                           *** IMPORTANT WARNING ***
+================================================================================
+
+This command is designed ONLY for images created with:
+  - Aaru alpha 16 or earlier
+
+CRITICAL LIMITATIONS:
+
+  1. There is NO WAY to automatically determine if this image actually needs
+     an upgrade. The file format version cannot distinguish between images
+     created with Aaru alpha 16 and newer versions.
+
+  2. Attempting to upgrade images created with NEWER versions (Aaru alpha 17+)
+     WILL CORRUPT THEM and make them UNREADABLE.
+
+  3. There is NO GUARANTEE of success. The upgrade process may fail or
+     produce an invalid image even with correct input.
+
+  4. This command is provided as a LAST RESORT ONLY.
+
+RECOMMENDED SOLUTION:
+
+  The IDEAL and SAFEST solution is to re-dump the media using a current
+  version of Aaru. This ensures data integrity and full compatibility with
+  the latest format improvements.
+
+Before proceeding:
+  - Make sure you have a BACKUP of the original image file
+  - Verify the image was created with Aaru alpha 16 or earlier
+  - Consider re-dumping the media if possible
+
+================================================================================
+
+Structure size comparison:
+  Alpha20 DDT v2 header: 81 bytes
+  Current library DdtHeader2: 85 bytes
+  Structure sizes differ - upgrade needed!
+
+Do you want to proceed with the upgrade? (yes/no): 
+Upgrade cancelled by user.

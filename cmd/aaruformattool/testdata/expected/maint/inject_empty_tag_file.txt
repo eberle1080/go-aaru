@@ -1,0 +1,3 @@
+== stdout
+== stderr
+ERROR: Media tag file is empty or cannot determine size: 'TAG'

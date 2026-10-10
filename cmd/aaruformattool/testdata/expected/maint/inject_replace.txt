@@ -1,0 +1,18 @@
+== stdout
+Injecting media tag into image...
+  tag-type: CD Table of Contents (0) -> DataType 2
+  media-tag-file: TAG (804 bytes)
+  image-file: IMAGE
+  index entries: 11
+  blockAlignmentShift: 9
+  Removing existing DataBlock with dataType 2 at offset 732672
+  Removed existing media tag entry from index.
+  Writing data block at offset 735232
+  Written data block (36 + 804 bytes)
+  Added new index entry: blockType=DataBlock, dataType=2, offset=735232
+  Writing new index at offset 736256 with 11 entries
+  Written index header and 11 entries
+  Updated header with new index offset 736256
+
+Successfully injected media tag 'CD Table of Contents' into image.
+== stderr

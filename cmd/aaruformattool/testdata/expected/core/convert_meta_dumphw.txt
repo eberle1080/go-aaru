@@ -1,0 +1,60 @@
+
+[1m[36m════════════════════════════════════════════════════════════════════════════════
+                           AARUFORMAT IMAGE CONVERTER
+════════════════════════════════════════════════════════════════════════════════[0m
+
+[1m[36m  Conversion Settings[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mInput file:         [0m IN
+  [33mOutput file:        [0m OUT
+  [33mMode:               [0m Standard sectors
+
+[1m[36m  Opening Source Image[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+[32m  ✓ Source image opened successfully[0m
+
+[1m[36m  Source Image Information[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mMedia type:         [0m Generic Hard Disk
+  [33mTotal sectors:      [0m 50
+  [33mSector size:        [0m 512 bytes
+  [33mTotal size:         [0m 25.00 KiB
+  [33mCreated by:         [0m go-aaru-test 1.0
+
+[1m[36m  Dump Hardware Information[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [1m[37mHardware Set #1[0m
+  [33m  Manufacturer:     [0m Maker
+  [33m  Model:            [0m Reader
+  [33m  Revision:         [0m A
+  [33m  Firmware:         [0m 1.2
+  [33m  Serial:           [0m SN1
+  [33m  Software:         [0m dumper 2.0
+  [33m  OS:               [0m Linux
+  [33m  Extents:          [0m 2 extent(s)
+  [1m[37mHardware Set #2[0m
+  [33m  Model:            [0m Second
+  [33m  Extents:          [0m 4 extent(s)
+
+[1m[36m  Creating Destination Image[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+[32m  ✓ Destination image created successfully[0m
+
+[1m[36m  Converting Sectors[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+
+
+
+[32m  ✓ Dump hardware information copied (2 set(s))[0m
+
+[1m[36m  Conversion Summary[0m
+[34m────────────────────────────────────────────────────────────────────────────────[0m
+  [33mData processed:     [0m 25.00 KiB
+  [33mTime elapsed:       [0m <t>
+  [33mAverage speed:      [0m <t>
+
+
+[32m[1m  ══════════════════════════════════════════════════════════════════════════════
+                          ✓ CONVERSION COMPLETED SUCCESSFULLY
+  ══════════════════════════════════════════════════════════════════════════════[0m
+
