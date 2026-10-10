@@ -1,6 +1,6 @@
 module github.com/eberle1080/go-aaru
 
-go 1.27.1
+go 1.26.0
 
 require (
 	github.com/cespare/xxhash/v2 v2.3.0
