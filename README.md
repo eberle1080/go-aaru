@@ -409,8 +409,9 @@ outputs from other software.
 - **Fuzzing.** Image opening, the codecs, the console parsers, the ISO 9660 and UDF readers and
   erasure-coding maps are fuzzed. ISO 9660 and UDF test volumes are built byte by byte by the tests;
   when macOS `hdiutil` and `newfs_udf` are available, volumes they write are cross-checked too
-  (`GO_AARU_MOUNT_TESTS=1` also populates UDF volumes through a mount and compares every revision with
-  what the macOS driver reads).
+  (`hdiutil makehybrid` bridge discs with files; freshly formatted `newfs_udf` volumes of every revision).
+  The tests never mount anything: attaching UDF images panicked the macOS 27 kernel. A comparison of
+  populated real-tool UDF volumes is still to do, on Linux.
 
 Behavior notes (none affect the on-disk format):
 
