@@ -542,6 +542,9 @@ func (v *Volume) parseEAs(e *Entry, b []byte, loc uint32) {
 	}
 }
 
+// maxEAFile bounds the bytes read from an extended attribute file.
+const maxEAFile = 1 << 16
+
 // readEAFile reads the extended attribute file an entry's EA ICB points to.
 func (v *Volume) readEAFile(e *Entry, icb longAD) {
 	part, err := v.partRef(icb.part)
@@ -559,7 +562,7 @@ func (v *Volume) readEAFile(e *Entry, icb longAD) {
 		v.warn(e.Path, "extended attribute file: %v", err)
 		return
 	}
-	n := min(c.size, 1<<20)
+	n := min(c.size, maxEAFile)
 	if c.size > n {
 		v.warn(e.Path, "extended attribute file of %d bytes truncated to %d", c.size, n)
 	}
@@ -643,6 +646,10 @@ func symlinkTarget(b []byte) (string, []string) {
 
 // loadStreams reads an entry's stream directory into e.Streams.
 func (v *Volume) loadStreams(e *Entry, icb longAD) {
+	if v.streamBudget <= 0 {
+		v.warn(e.Path, "named streams not read: more than %d in the directory", streamBudget)
+		return
+	}
 	sd := &Entry{Path: e.Path, IsDir: true, Characteristics: CharDirectory, vol: v}
 	v.loadEntry(sd, icb, true)
 	if sd.err != nil {
@@ -662,5 +669,6 @@ func (v *Volume) loadStreams(e *Entry, icb longAD) {
 			v.warn(s.Path, "%v", s.err)
 		}
 	}
+	v.streamBudget -= max(len(ents), 1)
 	e.Streams = ents
 }

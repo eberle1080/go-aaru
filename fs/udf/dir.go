@@ -54,8 +54,12 @@ func (v *Volume) readDirChecked(d *Entry) ([]*Entry, error) {
 	return v.readDir(d, "")
 }
 
-// maxStreams bounds the named streams read for one entry.
-const maxStreams = 1024
+// maxStreams bounds the named streams read for one entry, and
+// streamBudget those read for all the entries of one directory.
+const (
+	maxStreams   = 1024
+	streamBudget = 1 << 14
+)
 
 // readDir reads the file identifiers of directory d. For a stream
 // directory, streamOf is the owner's path.
@@ -69,7 +73,9 @@ func (v *Volume) readDir(d *Entry, streamOf string) ([]*Entry, error) {
 	}
 	limit := v.opts.MaxEntries
 	if streamOf != "" {
-		limit = maxStreams
+		limit = max(min(maxStreams, v.streamBudget), 0)
+	} else {
+		v.streamBudget = streamBudget
 	}
 	return v.parseFIDs(d, data, streamOf, limit), rerr
 }

@@ -582,6 +582,31 @@ func TestDevicesAndAttributes(t *testing.T) {
 	}
 }
 
+// Many entries sharing one large stream directory cannot multiply the
+// work: the streams read per directory are bounded.
+func TestStreamBudget(t *testing.T) {
+	b := newUB()
+	b.efe = true
+	f := ufile("f", []byte("f"))
+	for i := range 900 {
+		f.streams = append(f.streams, ufile(fmt.Sprintf("s%03d", i), nil))
+	}
+	kids := []*unode{f}
+	for i := range 20 {
+		l := ufile(fmt.Sprintf("link%02d", i), nil)
+		l.linkTo = f
+		kids = append(kids, l)
+	}
+	v := mustOpen(t, b.build(udir("", kids...)), nil)
+	w := walkAll(t, v)
+	if len(w.order) != 22 || len(w.errs) != 0 || len(w.entry(t, "/f").Streams) != 900 {
+		t.Errorf("walk %d entries, %v", len(w.order), w.errs)
+	}
+	if !hasWarning(v, "named streams not read") || len(w.entry(t, "/link19").Streams) != 0 {
+		t.Errorf("warnings %v", v.Warnings())
+	}
+}
+
 func TestDirectoryAcrossExtents(t *testing.T) {
 	b := newUB()
 	var kids []*unode

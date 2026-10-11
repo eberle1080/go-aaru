@@ -30,6 +30,10 @@ type Volume struct {
 	warnings []Warning
 	dropped  int
 	once     map[string]bool
+	// streamBudget is what is left of the named streams one directory
+	// read (or Open) may load, so that many entries sharing a large stream
+	// directory cannot multiply the work.
+	streamBudget int
 }
 
 // Open reads the UDF volume in r (size bytes long; size <= 0 means unknown,
@@ -136,6 +140,7 @@ func (v *Volume) open() (int, error) {
 		v.warn("", "logical volume integrity is open (the volume was not closed cleanly)")
 	}
 	v.info.Partitions = v.partitionInfo()
+	v.streamBudget = streamBudget
 	if err := v.readFSD(fsdLoc); err != nil {
 		return stageVolume, err
 	}
