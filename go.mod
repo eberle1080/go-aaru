@@ -5,7 +5,7 @@ go 1.26.0
 require (
 	github.com/cespare/xxhash/v2 v2.3.0
 	github.com/gdamore/tcell/v2 v2.13.10
-	github.com/klauspost/compress v1.20.1
+	github.com/klauspost/compress v1.20.3
 	golang.org/x/term v0.46.0
 	lukechampine.com/blake3 v1.4.1
 )
