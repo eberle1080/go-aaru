@@ -7,7 +7,7 @@ require (
 	github.com/gdamore/tcell/v2 v2.13.10
 	github.com/klauspost/compress v1.20.4
 	golang.org/x/term v0.48.0
-	lukechampine.com/blake3 v1.4.1
+	lukechampine.com/blake3 v1.5.3
 )
 
 require (
